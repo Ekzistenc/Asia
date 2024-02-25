@@ -921,9 +921,21 @@ img {
 	vertical-align: top;
 	width: 591px;
 	height: 248px;
-	top: 84px;
+	top: 285px;
 	background: url(./img/shades.png) center center / cover no-repeat;
 	z-index: -1;
+	opacity: 0;
+	animation: shadow 1.5s forwards;
+}
+
+@keyframes shadow {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .central {
@@ -944,7 +956,7 @@ img {
 
 .central-asia {
 	opacity: 0;
-	animation: zoom 1s;
+	animation: zoom 1s 0.5s;
 	animation-fill-mode: forwards;
 }
 
